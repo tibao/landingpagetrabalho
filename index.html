@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Atividade</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--Home-->
+    <section id="home">
+        <h1>Bem-Vindo a Etec Martinho Di Ciero</h1>
+        <p>Oferecemos cursos técnicos de excelência, preparando jovens para os desafios do mercado de trabalho.</p>
+        <div class="cards">
+            <h3>Cursos</h3>
+            <div class="card">Confira os cursos técnicos oferecidos pela nossa escola.</div>
+            <h3>Eventos</h3>
+            <div class="card">Fique por dentro dos nossos eventos e atividades culturais.</div>
+            <h3>Projetos</h3>
+            <div class="card">Saiba mais sobre os projetos inovadores que realizamos.</div>
+
+        </div>
+        <a href="#sobre" class="next-link">Sobre</a>
+    </section>
+
+    <!--Sobre-->
+    <section id="sobre">
+        <h1>Sobre a Etec Martinho Di Ciero</h1>
+      
+        <div id="carouselSobre" class="carousel slide" data-bs-ride="carousel">
+        
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselSobre" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagem1"></button>
+            <button type="button" data-bs-target="#carouselSobre" data-bs-slide-to="1" aria-label="Imagem2"></button>
+            <button type="button" data-bs-target="#carouselSobre" data-bs-slide-to="2" aria-label="Imagem3"></button>
+          </div>
+      
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/escola1.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="img/escola2.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="img/escola3.png" class="d-block w-100">
+            </div>
+          </div>
+      
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSobre" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselSobre" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+        <a href="#contato" class="next-link">Contato</a>
+      </section>
+        <p style="margin-top: 30px;">A Etec Martinho Di Ciero foi fundada com o objetivo de oferecer educação técnica de qualidade, conectando ensino, tecnologia e inovação.</p>
+      
+    <!--Contato-->
+    <section id="contato">
+        <h1>Título da Seção Contato</h1>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <a href="#localizacao" class="next-link">Localização</a>
+    </section>
+
+    <!--Localização-->
+    <section id="localizacao">
+        <h1>Localização</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.7786177446583!2d-47.2901751!3d-23.2874925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf5ab2d35d2b0d%3A0x90131a5f0c2272b3!2sEscola%20T%C3%A9cnica%20Estadual%20Martinho%20di%20Ciero%20-%20Itu!5e0!3m2!1spt-BR!2sbr!4v1745345997941!5m2!1spt-BR!2sbr" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a href="#integrantes" class="next-link">Integrantes</a>
+    </section>
+
+   <!--Integrantes-->
+    <section id="integrantes">
+        <h1>Integrantes</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="foto1.jpg" alt="Integrante 1">
+                <p>Vincius Samuel M. Tibo</p>
+            </div>
+            <div class="card">
+                <img src="foto2.jpg" alt="Integrante 2">
+                <p>Robinson M.</p>
+            </div>
+            <div class="card">
+                <img src="foto3.jpg" alt="Integrante 3">
+                <p>Ricardo G.</p>
+            </div>
+        </div>
+        <a href="#home" class="next-link">Voltar para Home</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Etec Martinho de Ciero.</p>
+    </footer> 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
